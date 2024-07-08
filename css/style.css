@@ -1,0 +1,82 @@
+
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #151414;
+      font-family: 'Arial', sans-serif;
+      background-image: url(https://i.pinimg.com/736x/bb/79/5a/bb795ac13cecee4a37337abc4fadc4aa.jpg)}
+    #header {
+      font-size: 10px;
+      color: white;
+    }
+    #calculator {
+      background-color:pink;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 18px;
+      background-color:  transparent;
+      color: rgb(46, 46, 247); 
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: pink;
+      color: #fff;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    .acbtn{
+      color: #333;
+    }
+    .delbtn{
+      color: #333;
+    }
+    .dotbtn{
+      color: #333;
+    }
+    .nobtn{
+      color: rgb(46, 46, 247);
+    }
+    .eightbtn{
+      color: rgb(46, 46, 247);
+    }
+    .ninebtn{
+      color: rgb(46, 46, 247);
+
+    }
+    button.operator {
+      background-color: pink;
+      color: #333;
+    }
+    button.equal {
+      background-color: pink;
+      width: 120px;
+      color: #333;
+    }
+    button.clear {
+      background-color: pink;
+      color: rgb(46, 46, 247);
+    }
+    button.extra {
+      background-color: pink;
+    }
+    

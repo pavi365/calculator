@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standard calculator</title>
+  <link href="css/style.css" rel="stylesheet">
+<body>
+ 
+    
+
+<div id="calculator">
+  <div id="header">Pavithra
+    <br>212221220037</div>
+  <input type="text" id="display" disabled>
+  <br>
+  <button class="acbtn" onclick="clearDisplay('AC')">AC</button>
+  <button class="delbtn"onclick="appendToDisplay('DEL')">DEL</button>
+  <button class="dotbtn"onclick="appendToDisplay('.')">.</button>
+  <button class="operator" onclick="appendToDisplay('/')">/</button>
+  <br>
+  <button class="nobtn"onclick="appendToDisplay('7')">7</button>
+  <button class="eightbtn"onclick="appendToDisplay('8')">8</button>
+  <button class="ninebtn"onclick="appendToDisplay('9')">9</button>
+  <button class="operator" onclick="appendToDisplay('*')">*</button>
+  <br>
+  <button class="nobtn"onclick="appendToDisplay('4')">4</button>
+  <button class="eightbtn" onclick="appendToDisplay('5')">5</button>
+  <button class="ninebtn" onclick="appendToDisplay('6')">6</button>
+  <button class="operator" onclick="appendToDisplay('-')">-</button>
+  <br>
+  <button class="nobtn" onclick="appendToDisplay('1')">1</button>
+  <button class="eightbtn" onclick="appendToDisplay('2')">2</button>
+  <button class="ninebtn" onclick="appendToDisplay('3')">3</button>
+  <button class="operator" onclick="appendToDisplay('+')">+</button>
+  <br>
+  <button class="dotbtn" onclick="appendToDisplay('0')">%</button>
+  <button class="clear" onclick="appendToDisplay('0')">0</button>
+  <button class="equal" onclick="calculateResult()">=</button>
+  
+</div>
+
+<script>
+  function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+  }
+
+  function clearDisplay() {
+    document.getElementById('display').value = '';
+  }
+
+  function calculateResult() {
+    try {
+      // Replace '^' with 'Math.pow'
+      const expression = document.getElementById('display').value.replace(/\^/g, 'Math.pow');
+      document.getElementById('display').value = eval(expression);
+    } catch (error) {
+      document.getElementById('display').value = 'Error';
+    }
+  }
+</script>
+
+</body>
+</html>
